@@ -1,6 +1,6 @@
 function toggleText() {
-togButt = document.querySelector(".toggle-text-button");
-div = togButt.nextElementSibling
+let togButt = document.querySelector(".toggle-text-button");
+let div = togButt.nextElementSibling
 function onClickHidden() {
   if (!div.hasAttribute("hidden")){
     div.setAttribute("hidden", "true")

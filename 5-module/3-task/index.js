@@ -5,14 +5,16 @@ function initCarousel() {
 let widthSlide = slide.offsetWidth;
 let positionLenta = 0;
 left.style.display = 'none';
-
+let allSlides = document.querySelectorAll(".carousel__slide");
+let maxNumber= allSlides.length - 1;
+console.log(maxNumber)
 
 function clickInTheRight (){
-  if(positionLenta<3){
+  if(positionLenta<maxNumber){
   left.style.display = ''; 
   positionLenta += 1;
   }
-  if(positionLenta === 3){
+  if(positionLenta === maxNumber){
     right.style.display = 'none'};
   position = -widthSlide*positionLenta;
  slide.style.transform = `translateX(${position}px)`;
