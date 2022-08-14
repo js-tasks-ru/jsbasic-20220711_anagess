@@ -7,7 +7,6 @@ let positionLenta = 0;
 left.style.display = 'none';
 let allSlides = document.querySelectorAll(".carousel__slide");
 let maxNumber= allSlides.length - 1;
-console.log(maxNumber)
 
 function clickInTheRight (){
   if(positionLenta<maxNumber){
