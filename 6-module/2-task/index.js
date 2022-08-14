@@ -1,4 +1,3 @@
-
 export default class ProductCard {
   constructor(product) {
   let div = document.createElement("div");
@@ -25,5 +24,4 @@ let event = new CustomEvent("product-add", {
 div.dispatchEvent(event)}
 let button = div.querySelector("#"+product.id);
 button.addEventListener('click', createEvent);
-}
 }
