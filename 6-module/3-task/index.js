@@ -1,8 +1,7 @@
 import createElement from '../../assets/lib/create-element.js';
 
 export default class Carousel {
-  
-  constructor(slides) {
+ constructor(slides) {
     this.slides = slides;
     const elem = createElement(`<div class="carousel"></div>`);  
 
